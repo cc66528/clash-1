@@ -5,26 +5,41 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港, server: 120.232.41.6, port: 204, type: ss, cipher: aes-128-gcm, password: 7oosgzlD}
-  - {name: 塞浦路斯, server: 5.183.179.94, port: 29082, type: ss, cipher: chacha20-ietf-poly1305, password: xiaodongyoutuber}
-  - {name: 🇳🇱 荷兰, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇩🇪 德国, server: 78.47.91.90, port: 36352, type: ss, cipher: aes-256-gcm, password: JUZTvwqCdJYW}
-  - {name: 🇺🇸 美国, server: 212.102.44.83, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇨🇦 加拿大, server: 208.78.41.198, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 美国, server: 16.162.3.11, port: 30050, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 2, server: xa.v2cy.com, port: 80, type: vmess, uuid: 586fb889-61ee-42d9-b374-c1440b0a0664, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dn-7dp8osc1.cn2.run.gxu.edu.cn}}
+  - {name: 🇯🇵 日本, server: 54.223.108.178, port: 8003, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.108.178}}
+  - {name: 🇸🇬 新加坡, server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇩🇪 德国, server: 193.29.106.197, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇸 美国 3, server: 143.244.42.71, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
   - {name: 🇩🇪 德国 2, server: 5.183.179.94, port: 47148, type: vmess, uuid: 730cb94d-012a-4bfc-aa2a-1573f63e5905, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 2, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 3, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 美国 4, server: 212.102.44.83, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇩🇪 德国 3, server: 78.47.94.207, port: 35139, type: ss, cipher: aes-256-gcm, password: vcFINAQlgqZZ}
-  - {name: 🇬🇧 英国, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇺🇸 美国 5, server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 美国 6, server: 143.244.60.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 塞浦路斯 2, server: 195.47.194.42, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇺🇸 美国 7, server: 212.102.44.83, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 塞浦路斯 3, server: 195.47.194.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 美国 8, server: 198.147.22.87, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 美国 9, server: 198.147.22.87, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇺🇸 美国 10, server: 84.17.35.118, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇬🇧 英国, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇩🇪 德国 3, server: 5.183.179.94, port: 47148, type: vmess, uuid: 730cb94d-012a-4bfc-aa2a-1573f63e5905, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 4, server: 212.102.44.83, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 美国 5, server: 212.102.44.83, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇺🇸 美国 6, server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇫🇷 法国, server: ss.pl.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: M1LCZAlfz1bV}
+  - {name: 🇷🇺 俄罗斯, server: 45.147.201.94, port: 21799, type: vmess, uuid: 77a8f6bb-ace4-4283-a865-b8feabf5312d, alterId: 0, cipher: auto, tls: false}
+  - {name: 克罗地亚, server: 85.10.50.164, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇬🇧 英国 2, server: 5.183.101.200, port: 35374, type: vmess, uuid: 62836733-0014-4014-e0e3-908eea2f3063, alterId: 64, cipher: auto, tls: false}
+  - {name: 克罗地亚 2, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 美国 7, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 8, server: 212.102.44.83, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 9, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: _30, server: 45.135.135.93, port: 8080, type: vmess, uuid: 884688eb-d63b-4186-961d-f3b5deac45de, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.135.135.93}}
+  - {name: 🇬🇧 英国 3, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 10, server: jsdx.v2cy.com, port: 80, type: vmess, uuid: 586fb889-61ee-42d9-b374-c1440b0a0664, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dn-7dp8osc1.cn2.run.gxu.edu.cn}}
+  - {name: 🇩🇪 德国 4, server: 78.47.91.90, port: 36352, type: ss, cipher: aes-256-gcm, password: JUZTvwqCdJYW}
+  - {name: 🇬🇧 英国 4, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 塞浦路斯, server: 195.47.194.42, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇳🇱 荷兰, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 11, server: 84.17.35.118, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 以色列, server: 195.47.194.42, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇺🇸 美国 12, server: 84.17.35.118, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇩🇪 德国 5, server: 78.47.219.86, port: 35139, type: ss, cipher: aes-256-gcm, password: vcFINAQlgqZZ}
+  - {name: 🇩🇪 德国 6, server: 78.47.94.207, port: 35139, type: ss, cipher: aes-256-gcm, password: vcFINAQlgqZZ}
+  - {name: 塞浦路斯 2, server: 195.47.194.42, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 塞浦路斯 3, server: 195.47.194.42, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 美国 13, server: 84.17.35.78, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,102 +48,162 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - 🇭🇰 香港
-      - 塞浦路斯
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国
       - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇩🇪 德国 2
       - 🇺🇸 美国 2
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇩🇪 德国
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇩🇪 德国 3
+      - 🇩🇪 德国 2
       - 🇬🇧 英国
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
-      - 塞浦路斯 2
+      - 🇫🇷 法国
+      - 🇷🇺 俄罗斯
+      - 克罗地亚
+      - 🇬🇧 英国 2
+      - 克罗地亚 2
       - 🇺🇸 美国 7
-      - 塞浦路斯 3
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - _30
+      - 🇬🇧 英国 3
       - 🇺🇸 美国 10
+      - 🇩🇪 德国 4
+      - 🇬🇧 英国 4
+      - 塞浦路斯
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国 11
+      - 以色列
+      - 🇺🇸 美国 12
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 塞浦路斯 2
+      - 塞浦路斯 3
+      - 🇺🇸 美国 13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港
-      - 塞浦路斯
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国
       - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇩🇪 德国 2
       - 🇺🇸 美国 2
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇩🇪 德国
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇩🇪 德国 3
+      - 🇩🇪 德国 2
       - 🇬🇧 英国
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
-      - 塞浦路斯 2
+      - 🇫🇷 法国
+      - 🇷🇺 俄罗斯
+      - 克罗地亚
+      - 🇬🇧 英国 2
+      - 克罗地亚 2
       - 🇺🇸 美国 7
-      - 塞浦路斯 3
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - _30
+      - 🇬🇧 英国 3
       - 🇺🇸 美国 10
+      - 🇩🇪 德国 4
+      - 🇬🇧 英国 4
+      - 塞浦路斯
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国 11
+      - 以色列
+      - 🇺🇸 美国 12
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 塞浦路斯 2
+      - 塞浦路斯 3
+      - 🇺🇸 美国 13
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇭🇰 香港
-      - 塞浦路斯
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国
       - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇩🇪 德国 2
       - 🇺🇸 美国 2
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇩🇪 德国
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇩🇪 德国 3
+      - 🇩🇪 德国 2
       - 🇬🇧 英国
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
-      - 塞浦路斯 2
+      - 🇫🇷 法国
+      - 🇷🇺 俄罗斯
+      - 克罗地亚
+      - 🇬🇧 英国 2
+      - 克罗地亚 2
       - 🇺🇸 美国 7
-      - 塞浦路斯 3
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - _30
+      - 🇬🇧 英国 3
       - 🇺🇸 美国 10
+      - 🇩🇪 德国 4
+      - 🇬🇧 英国 4
+      - 塞浦路斯
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国 11
+      - 以色列
+      - 🇺🇸 美国 12
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 塞浦路斯 2
+      - 塞浦路斯 3
+      - 🇺🇸 美国 13
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇭🇰 香港
-      - 塞浦路斯
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国
       - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇩🇪 德国 2
       - 🇺🇸 美国 2
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇩🇪 德国
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇩🇪 德国 3
+      - 🇩🇪 德国 2
       - 🇬🇧 英国
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
-      - 塞浦路斯 2
+      - 🇫🇷 法国
+      - 🇷🇺 俄罗斯
+      - 克罗地亚
+      - 🇬🇧 英国 2
+      - 克罗地亚 2
       - 🇺🇸 美国 7
-      - 塞浦路斯 3
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - _30
+      - 🇬🇧 英国 3
       - 🇺🇸 美国 10
+      - 🇩🇪 德国 4
+      - 🇬🇧 英国 4
+      - 塞浦路斯
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国 11
+      - 以色列
+      - 🇺🇸 美国 12
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 塞浦路斯 2
+      - 塞浦路斯 3
+      - 🇺🇸 美国 13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,26 +223,41 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - 🇭🇰 香港
-      - 塞浦路斯
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国
       - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇩🇪 德国 2
       - 🇺🇸 美国 2
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇩🇪 德国
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇩🇪 德国 3
+      - 🇩🇪 德国 2
       - 🇬🇧 英国
+      - 🇩🇪 德国 3
+      - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
-      - 塞浦路斯 2
+      - 🇫🇷 法国
+      - 🇷🇺 俄罗斯
+      - 克罗地亚
+      - 🇬🇧 英国 2
+      - 克罗地亚 2
       - 🇺🇸 美国 7
-      - 塞浦路斯 3
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - _30
+      - 🇬🇧 英国 3
       - 🇺🇸 美国 10
+      - 🇩🇪 德国 4
+      - 🇬🇧 英国 4
+      - 塞浦路斯
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国 11
+      - 以色列
+      - 🇺🇸 美国 12
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 塞浦路斯 2
+      - 塞浦路斯 3
+      - 🇺🇸 美国 13
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
